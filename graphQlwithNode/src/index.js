@@ -18,7 +18,7 @@ const resolvers = {
         },
         sayMyName(){
             return "My name is Subham"
-        } 
+        }
     }
 }
 
@@ -31,3 +31,5 @@ const server = new GraphQLServer({
 server.start((e)=>{
     console.log(`server started at: ${e}`)
 })
+
+// types of datatype in GraphQL
