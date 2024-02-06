@@ -43,6 +43,7 @@ const resolvers = {
     }
 }
 
+// typeDefs name should be in correct format "typeDefs"
 
 const server = new GraphQLServer({
         typeDefs,
