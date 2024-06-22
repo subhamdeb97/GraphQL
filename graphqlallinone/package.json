@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "relation": "nodemon src/relation.js --exec babel-node"
+    "relation": "nodemon src/relation.js --exec babel-node",
+    "mutation": "nodemon src/mutation.js --exec babel-node"
   },
   "keywords": [],
   "author": "",
@@ -12,9 +13,10 @@
   "dependencies": {
     "babel-cli": "6.26.0",
     "babel-preset-env": "^1.7.0",
-    "graphql-yoga": "1.14.10"
+    "graphql-yoga": "1.14.10",
+    "uuid": "^10.0.0"
   },
-  "type" : "module",
+  "type": "module",
   "devDependencies": {
     "nodemon": "^3.1.0"
   },
