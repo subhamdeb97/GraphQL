@@ -1,0 +1,24 @@
+{
+  "name": "graphQL_Project_Structure",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "relation": "nodemon src/relation.js --exec babel-node",
+    "mutation": "nodemon src/mutation.js -e js,graphql --exec  babel-node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "graphql-yoga": "1.14.10",
+    "uuid": "^10.0.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "description": ""
+}
