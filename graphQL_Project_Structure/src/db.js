@@ -45,7 +45,12 @@ const posts = [
 ]
 
 const comments = [
-
+    {
+        id: "21comment",
+        userId: "123deb",
+        postId: "11post",
+        body: "hardcoded post in db"
+    }
 ]
 
 

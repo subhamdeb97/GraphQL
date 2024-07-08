@@ -1,7 +1,12 @@
  type Query{
         users(query: String!): [User!]!
         posts(query: String!): [Post!]!
+        comments : [Comment!]!
     }
+
+type Subham{
+     trysub: Int!
+}
 
     type User{
         id: ID!
@@ -33,8 +38,19 @@
         deleteComment(commentId: String!, postId: String!): String! 
     }
     
+    type Subscription{
+        count: Int!
+        comment(postId: String!): Comment!
+        post: postSubscriptionPayload!
+    }
+
     input CreateUserInput{
         name: String!
         email: String!
         age: Int
+    }
+
+    type postSubscriptionPayload{
+        mutation: String!
+        data: Post!
     }
